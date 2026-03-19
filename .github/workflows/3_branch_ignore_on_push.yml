@@ -3,7 +3,7 @@ run-name: Running - ${{ github.event_name }}
 on:
   push:
     branches-ignore:
-      - master
+      - main
 jobs:
   on-push:
 
@@ -12,3 +12,5 @@ jobs:
       - name: Comentário
         run: |
           echo "Comentário PUSH WORKFLOW - Branch Ignore"
+
+          
